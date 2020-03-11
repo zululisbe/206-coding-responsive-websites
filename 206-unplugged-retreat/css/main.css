@@ -481,7 +481,90 @@ footer .copyright {
 
   @media only screen and (min-width: 1200px) {
     /*Desktop styles here */
-  }  
+  } 
+
+.content-wrapper{
+  max-width: 960px;
+}
+
+/* Header */
+header {
+  justify-content: space-around;
+  padding: 33px 0;
+}
+
+header .content-wrapper {
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+}
+ 
+header nav {
+  width: 50%;
+  justify-content: center;
+}
+
+header nav ul {
+  justify-content: space-between;
+}
+
+.header-divider {
+  display: none;
+}
+
+/* Hero Area */
+
+.hero-area h1 {
+  width: 60%;
+}
+
+/* Aside */
+
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 30%;
+}
+
+/* Features */
+
+.features h2 {
+  width: 90%;
+}
+ 
+.features article {
+  flex-basis: 33%;
+}
+
+/* Reviews */
+   
+.reviews article div {
+  width:  50%;      
+}
+ 
+/* Footer */
+ 
+footer .contact {
+  margin-bottom: 0;
+}
+ 
+footer .copyright {
+  width: 100%;
+}
+/* FAQ page */
+
+.faq h2 {
+  width: 100%;
+}
+
+/* About page */
+
+.mission h2, .content-section  .content-wrapper h2{
+  width: 95%;
+} 
 
 /* ==========================================================================
    Print styles.
