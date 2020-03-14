@@ -146,10 +146,12 @@ p {
 }
 
 img {
+  width: 100%;
 
 }
 
 figure {
+  margin: 0;
 
 }
 
@@ -254,6 +256,15 @@ footer .copyright {
   line-height: 1.2;
 }
 
+header figure {
+  width: 100%;
+  background-image: url('img/jake-melara.jpg') center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /* Aside */
 aside {
   display: flex;
@@ -314,6 +325,15 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features img {
+  width: 100%;
+  background-image: url('img/raw-pixel.jpg') center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /* Reveiws */
 .reveiws {
   display: flex;
@@ -330,6 +350,14 @@ input[type=button] {
   width: 55%;
   margin: 20px 0;
 }
+
+.reveiws img {
+  width: 100%;
+  background-image: url('img/omar-lopez.jpg') center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 /*-----------------About Page ------------*/
 
 .mission {
