@@ -244,14 +244,16 @@ footer .contact{
 }
 
 footer .social-icons {
-  font-size: 3.7em;
-  margin: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -660,6 +662,11 @@ footer h4 {
 
 footer p {
   line-height: 1.2;
+}
+
+footer .social-icons {
+  line-height: 1.2;
+  justify-content: space-between;
 }
  
 footer .copyright {
