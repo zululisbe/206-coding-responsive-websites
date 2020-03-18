@@ -105,8 +105,8 @@ html {
 }
 
 body {
-  font-family: 'Open sans', sans-serif;
   font-size: 1em;
+  font-family: 'Open sans', sans-serif;
   color: #e2e3ed;
   text-align: left;
 
@@ -125,17 +125,16 @@ a {
 }
 h2 {
   font-family: 'Poppins', sans-serif;
-  color: #e6e6e6;
   font-weight: 500;
   font-size: 1.8em;
 
 }
 
-h3, h4{
+h3, 
+h4{
   font-family: 'Poppins', sans-serif;
   font-size: 1.1em;
   font-weight: 500;
-  color: #e6e6e6;
   margin: 20px 0;
 
 }
@@ -143,7 +142,6 @@ h3, h4{
 p {
   font-size: .87em;
   line-height: 1.28;
-  color: #ffffff;
 
 }
 
@@ -196,6 +194,7 @@ header figure {
   flex-flow: row wrap;
 }
 
+
 .header-divider{
   background: #3a3a3a;
   height: 1px;
@@ -206,13 +205,14 @@ header figure {
 
 header nav{
   width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   font-size: 1.1em;
   font-weight: 700;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+
 }
 
 header nav ul {
@@ -226,9 +226,8 @@ header nav ul li {
 }
 
 footer {
-  margin: 0;
+  text-align: center;
   flex-direction: column;
-  background-color: #161d16;
 }
 
 footer p{
@@ -245,6 +244,8 @@ footer .contact{
 }
 
 footer .social-icons {
+  font-size: 3.7em;
+  margin: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -263,7 +264,7 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  background: url(../img/unplugged-retreat.jpg);
+  background: url(../img/jake-melara.jpg);
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -277,15 +278,6 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
-}
-
-header figure {
-  width: 100%;
-  background-image: url('img/jake-melara.jpg') center no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 /* Aside */
@@ -325,7 +317,9 @@ input[type=button] {
 
 /* Features */
 .features {
-  background-image: url('img/raw-pixel.jpg') center no-repeat;
+  background-image: url('../img/rawpixel.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -335,21 +329,26 @@ input[type=button] {
   margin-bottom: 60px;
 }
 
-.features p {
-  margin: 0;
-  text-align: center;
-}
-
 .features article{
   width: 63%;
   margin: 30px 0;
 }
 
-.features-items-description {
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.7em;
+  margin-bottom: 40px;
+}
+
+.features p {
+  margin: 0;
+  text-align: center;
 }
 
 /* Reveiws */
@@ -369,13 +368,7 @@ input[type=button] {
   margin: 20px 0;
 }
 
-.reveiws img {
-  width: 100%;
-  background-image: url('img/omar-lopez.jpg') center no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+
 
 /*-----------------About Page ------------*/
 
@@ -429,7 +422,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
 }
 
 .faq h2 {
@@ -564,10 +557,13 @@ header .content-wrapper {
   justify-content: space-around;
   flex-direction: row;
 }
+
+header figure {
+  width: 30%;
+}
  
 header nav {
-  width: 30%;
-  justify-content: center;
+  width: 20%;
 }
 
 header nav ul {
@@ -581,7 +577,7 @@ header nav ul {
 /* Hero Area */
 
 .hero-area {
-  display: none;
+  min-height: 600px;
 }
 
 .hero-area h1 {
@@ -601,7 +597,7 @@ aside .content-wrapper {
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width: 35%;
+  width: 40%;
   margin: 0; 
 }
 
@@ -670,7 +666,7 @@ footer .copyright {
   width: 100%;
 }
 
-/* FAQ page */
+/*--------- FAQ page ----------------*/
 
 .faq .content-wrapper {
   justify-content: space-between;
@@ -690,7 +686,7 @@ footer .copyright {
   line-height: 1.1;
 }
 
-/* About page */
+/*----------------- About page -----------------------*/
 
 .mission-content {
   display: flex;
@@ -764,7 +760,7 @@ aside .content-wrapper {
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width: 40%;
+  width: 30%;
 }
 
 .form-description p {
@@ -788,14 +784,14 @@ aside .content-wrapper .form {
 }
    
 .reviews article div {
-  width:  50%;      
+  width:  42%;      
 }
 
 footer h4 {
   font-size: 1.8em;
 }
 
-/* FAQ page */
+/*---------- FAQ page ----------------*/
 
 .faq h2 {
   width: 100%;
@@ -808,7 +804,7 @@ footer h4 {
   line-height: 1;
 }
 
-/* About page */
+/*------ About page ----------------*/
 
 .map figure {
   padding-bottom: 37.5%;
