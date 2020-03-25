@@ -348,7 +348,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .features i {
